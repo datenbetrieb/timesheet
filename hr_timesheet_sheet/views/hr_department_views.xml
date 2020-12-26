@@ -44,23 +44,6 @@
                     </div>
                 </div>
             </xpath>
-            <xpath
-                expr="//div[hasclass('o_kanban_manage_to_approve')]"
-                position="inside"
-            >
-                <div class="row">
-                    <div class="col-xs-12 text-left">
-                        <a
-                            name="%(hr_timesheet_sheet.hr_timesheet_action_from_department)d"
-                            type="action"
-                        >
-                            <t
-                                t-esc="record.timesheet_sheet_to_approve_count.raw_value or 0"
-                            /> Timesheets
-                        </a>
-                    </div>
-                </div>
-            </xpath>
         </field>
     </record>
 </odoo>
